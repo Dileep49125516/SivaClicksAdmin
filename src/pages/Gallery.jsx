@@ -400,9 +400,9 @@ const Gallery = () => {
                     onClick={() =>
                       setPreviewImage(item)
                     }
-                    className="absolute bottom-4 left-4 flex translate-y-3 items-center gap-2 rounded-xl bg-white/95 px-3 py-2 text-sm font-semibold text-slate-800 opacity-0 shadow-lg backdrop-blur transition duration-300 group-hover:translate-y-0 group-hover:opacity-100"
-                  >
-                    <Eye size={16} />
+                    className="absolute bottom-4 left-4 flex items-center gap-2 rounded-xl bg-white/95 px-3 py-2 text-sm font-semibold text-slate-800 opacity-100 shadow-lg backdrop-blur transition duration-300 sm:translate-y-3 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
+                   >
+                     <Eye size={16} />
                     Preview
                   </button>
 
@@ -412,7 +412,7 @@ const Gallery = () => {
                     onClick={() =>
                       handleDelete(item._id)
                     }
-                    className="absolute bottom-4 right-4 flex translate-y-3 items-center justify-center rounded-xl bg-red-500 p-2.5 text-white opacity-0 shadow-lg transition duration-300 hover:bg-red-600 group-hover:translate-y-0 group-hover:opacity-100"
+                    className="absolute bottom-4 right-4 flex items-center justify-center rounded-xl bg-red-500 p-2.5 text-white opacity-100 shadow-lg transition duration-300 hover:bg-red-600 sm:translate-y-3 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
                     title="Delete image"
                   >
                     <Trash2 size={17} />
